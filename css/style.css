@@ -30,6 +30,8 @@ img{
     max-width: 100%;
 }
 
+strong { font-weight: var(--fw-bold)}
+
 /* Typography*/
 
 h1,
@@ -44,7 +46,11 @@ h2 { font-size: var(--fs-h2)}
 h3 { font-size: var(--fs-h3)}
 
 .section__title {
+    margin-bottom: .25em;
+}
 
+.section__subtitle--intro {
+    font-weight: 
 }
 
 .section__subtitle {
