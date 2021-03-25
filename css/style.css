@@ -154,6 +154,10 @@ header {
     z-index: 1000;
 }
 
+.nav-open .nav {
+    transform: translate(0);
+}
+
 .hamburger {
     display: block;
     position: relative;
