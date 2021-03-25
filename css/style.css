@@ -158,6 +158,14 @@ header {
     transform: translate(0);
 }
 
+.nav-open .nav-toggle {
+    position: fixed;
+}
+
+.nav-open .hamburger {
+    transform: rotate(.625turn);
+}
+
 .hamburger {
     display: block;
     position: relative;
