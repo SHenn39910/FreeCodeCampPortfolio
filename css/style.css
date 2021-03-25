@@ -36,6 +36,25 @@ img{
 
 strong { font-weight: var(--fw-bold)}
 
+/*Buttons*/
+
+.btn {
+    display: inline-block;
+    padding: .5em 1.5em;
+    background: var(--clr-accent);
+    color: var(--clr-dark);
+    text-decoration: none;
+    cursor: pointer;
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: var(--fw-bold);
+    transition: transform 200ms ease-in-out;
+}
+
+.btn-hover {
+    transform: scale(1.1);
+}
 /* Typography*/
 
 h1,
@@ -126,8 +145,36 @@ nav { display: none;}
 .section__title--services::after {
     content: '';
     display: block;
-    width: 25%;
+    width: 3em;
     height: 1px;
     margin: 0.5em auto len;
-    background: var(--clr-light)
+    background: var(--clr-light);
+    opacity: 0.25;
+}
+
+.services {
+    margin-bottom: 4em;
+}
+
+.service {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+@media (min-width: 800px) {
+    .services {
+        display: flex;
+        max-width: 100px;
+        margin-left: 0 auto;
+        margin-right: auto;
+    }
+
+    .service + .service {
+        margin-left: 2em;
+    }
+}
+
+.about-me {
+    max-width: 1000px;
+    margin: 
 }
