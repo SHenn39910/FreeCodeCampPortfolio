@@ -184,4 +184,12 @@ nav { display: none;}
         display: grid;
         grid-template-columns: 1fr 200px;
     }
+
+    .section__subtitle--about {
+        
+    }
+
+    .about-me__img {
+
+    }
 }
