@@ -183,13 +183,26 @@ nav { display: none;}
     .about-me {
         display: grid;
         grid-template-columns: 1fr 200px;
+        grid-template-areas:
+            "title img"
+            "subtitle img"
+            "text img";
+        grid-column-gap: 2em;
     }
 
     .section__subtitle--about {
-        
+        grid-area: title;
     }
 
+    .section__subtitle--about {
+        grid-column: 1 / -1;
+        grid-row: 2;
+        position: relative;
+        left: -2em;
+        width: calc(100% + 4em);
+        
+    }
     .about-me__img {
-
+        grid-area: img;
     }
 }
