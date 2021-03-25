@@ -152,6 +152,17 @@ header {
     position: relative;
 }
 
+.hamburger::before,
+.hamburger::after {
+
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
 /* Intro section */
 
 .intro {
