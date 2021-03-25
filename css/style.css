@@ -144,16 +144,18 @@ header {
 }
 
 .hamburger {
-    background: var(--clr-dark);
-    width: 2em;
-    height: 3px;
-    border-radius: 1em;
     display: block;
     position: relative;
 }
 
+.hamburger,
 .hamburger::before,
 .hamburger::after {
+    background: var(--clr-dark);
+    width: 2em;
+    height: 3px;
+    border-radius: 1em;
+}
 
 .hamburger::before,
 .hamburger::after {
@@ -161,6 +163,7 @@ header {
     position: absolute;
     left: 0;
     right: 0;
+    background: var(--clr-dark);
 }
 
 /* Intro section */
