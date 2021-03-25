@@ -200,9 +200,20 @@ nav { display: none;}
         position: relative;
         left: -2em;
         width: calc(100% + 4em);
-        
+        padding-left: 1em;
+        padding-right: calc(200px + 4em);
     }
     .about-me__img {
         grid-area: img;
+        position: relative;
+        z-index: 2;
     }
+}
+
+/* My Work */
+
+.my-work {
+    background-color: var(--clr-dark);
+    color: var(--clr-light);
+    text-align: center;
 }
