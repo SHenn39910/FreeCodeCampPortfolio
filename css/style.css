@@ -246,8 +246,8 @@ header {
         margin: 0 auto;
         grid-column-gap: 1em;
         grid-template-areas:
-            'img title'
-            'img subtitle';
+            "img title"
+            "img subtitle";
         grid-template-columns: min-content max-content;
     }
 
