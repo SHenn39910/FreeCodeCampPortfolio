@@ -179,11 +179,6 @@ header {
     opacity: 0;
 }
 
-.hamburger {
-    display: block;
-    position: relative;
-}
-
 .hamburger,
 .hamburger::before,
 .hamburger::after {
@@ -191,6 +186,8 @@ header {
     width: 2em;
     height: 3px;
     border-radius: 1em;
+    display: block;
+    position: relative;
     transition: transform 250ms ease-in-out;
 }
 
@@ -204,7 +201,7 @@ header {
 }
 
 .hamburger::before { top: 6px;}
-.hamburger::after { bottom: 6px; }
+.hamburger::after { bottom: 6px;}
 /* Intro section */
 
 .intro {
@@ -218,8 +215,8 @@ header {
         margin: 0 auto;
         grid-column-gap: 1em;
         grid-template-areas:
-            *img title*
-            *img subtitle*;
+            'img title'
+            'img subtitle';
         grid-template-columns: min-content max-content;
     }
 
@@ -290,7 +287,7 @@ header {
 
 .about-me {
     max-width: 1000px;
-    margin: 
+    margin:
 }
 
 @media(min-width: 600px) {
