@@ -11,7 +11,23 @@
     --fw-reg: 300;
     --fw-bold: 900;
 
-    --clr-light: #
+    --clr-light: #fff;
+    --clr-dark: #303030;
+    --clr-accent: #1bebbd;
+
+    --fs-h1: 3rem;
+    --fs-h2: 2.25rem;
+    --fs-h3: 2.25rem;
+    --fs-body: 3rem;
+
+    
+
+}
+
+@media( min-width: 800px){
+    :root {
+        --fs-
+    }
 }
 
 /*General Styles*/
@@ -148,7 +164,7 @@ header {
 }
 
 .nav-toggle {
-    padding: .25em;
+    padding: .5em;
     background: transparent;
     border: 0;
     cursor: pointer;
@@ -156,6 +172,10 @@ header {
     right: 1em;
     top: 1em;
     z-index: 1000;
+}
+
+.nav-open {
+    background: blue;
 }
 
 .nav-open .nav {
@@ -172,11 +192,16 @@ header {
 
 
 .nav-open .hamburger::before {
-    transform: rotate(90deg)
+    transform: rotate(90deg) translateX(-6px);
 }
 
 .nav-open .hamburger::after {
     opacity: 0;
+}
+
+.hamburger {
+    display:block;
+    position: relative;
 }
 
 .hamburger,
@@ -186,8 +211,6 @@ header {
     width: 2em;
     height: 3px;
     border-radius: 1em;
-    display: block;
-    position: relative;
     transition: transform 250ms ease-in-out;
 }
 
@@ -195,13 +218,15 @@ header {
 .hamburger::after {
     content: '';
     position: absolute;
+    width: 50px;
+    height: 6px;
+    background: black;
     left: 0;
     right: 0;
-    background: var(--clr-accent);
 }
 
-.hamburger::before { top: 6px;}
-.hamburger::after { bottom: 6px;}
+.hamburger::before { top: 6px; }
+.hamburger::after { bottom: 6px; }
 /* Intro section */
 
 .intro {
