@@ -180,9 +180,9 @@ header {
     z-index: 1000;
 }
 
-.nav-open {
+/* .nav-open {
     background: blue;
-}
+} */
 
 .nav-open .nav {
     transform: translateX(0);
