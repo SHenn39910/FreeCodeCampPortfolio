@@ -143,7 +143,7 @@ header {
     right: 0;
     z-index: 100;
 
-    transform: translateX(0%);
+    transform: translateX(100%);
     transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
 }
 
@@ -315,10 +315,11 @@ header {
         margin-left: 2em;
     }
 }
+/*About Me*/
 
 .about-me {
     max-width: 1000px;
-    margin:
+    margin: 0 auto;
 }
 
 @media(min-width: 600px) {
@@ -332,8 +333,9 @@ header {
         grid-column-gap: 2em;
     }
 
+    .section__title--about,
     .section__subtitle--about {
-        grid-area: title;
+        grid-column: title;
     }
 
     .section__subtitle--about {
@@ -346,9 +348,8 @@ header {
         padding-right: calc(200px + 4em);
     }
     .about-me__img {
-        grid-area: img;
-        position: relative;
-        z-index: 2;
+        grid-row: 1 / -1;
+        grid-column: 2/
     }
 }
 
