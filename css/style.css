@@ -67,7 +67,7 @@ strong { font-weight: var(--fw-bold) }
 }
 
 /*Buttons*/
-
+/* 
 .btn {
     display: inline-block;
     padding: .5em 3.5em;
@@ -84,7 +84,30 @@ strong { font-weight: var(--fw-bold) }
 
 .btn-hover {
     transform: scale(1.1);
-}
+} */
+
+/* 1 */
+.btn {
+    background: rgb(6,14,131);
+    background: linear-gradient(0deg, rgba(6,14,131,1) 0%, rgba(12,25,180,1) 100%);
+    border: none;
+    letter-spacing: 2px;
+    width: 160px;
+    height: 40px;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-weight: 500;
+    cursor: pointer;
+    background: transparent;
+    transition: all 0.3 ease;
+    position: relative;
+    display: inline-block;
+  }
+  .btn:hover {
+     background: rgb(0,3,255);
+  background: linear-gradient(0deg, rgba(0,3,255,1) 0%, rgba(2,126,251,1) 100%);
+  }
+
 /* Typography*/
 
 h1,
@@ -356,8 +379,9 @@ header {
         padding-right: calc(200px + 4em);
     }
     .about-me__img {
-        grid-row: 1 / -1;
-        grid-column: 2/
+        grid-area: img;
+        position: relative;
+        z-index: 2;
     }
 }
 
