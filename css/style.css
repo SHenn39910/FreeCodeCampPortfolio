@@ -98,7 +98,6 @@ strong { font-weight: var(--fw-bold) }
     padding: 10px 25px;
     font-weight: 500;
     cursor: pointer;
-    background: transparent;
     transition: all 0.3 ease;
     position: relative;
     display: inline-block;
